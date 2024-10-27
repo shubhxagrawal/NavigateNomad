@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: #eee;
+    font-family: Arial;
+    }
+    .wrapper {
+    margin: 0 auto 0 60px;
+    width: 1000px;
+    font-family: Arial;
+    margin-left: -70px;
+    }
+    nav {
+    width: 100%;
+    height: 100px;
+    background-color: #080808;
+    }
+    ul{
+    }
+    ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 100px;
+    
+    }
+    ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-left: 60px;
+    }
+    ul li a:hover {
+    color: Blue;
+    }
+    .Khan {
+        height: 100px;
+margin-left: 170px;
+margin-right: 50px;
+scale: 2.5;
+z-index: -5;
+        }
+    .Heading1 {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    }
+    .A {
+    width: 150px;
+    margin-top: 150px;
+    margin-left: 120px;
+    margin-right: 80px;
+    }
+    
+    .A:hover {
+    border: #eee;
+    border-style: double;
+    border-width: thick;
+    background-color: #eee1;
+    }
+    .B {
+    width: 200px;
+    margin-top: 250px;
+    margin-left: 80px;
+    margin-right: 80px;
+    }
+    .B:hover {
+    border: #eee;
+    border-style: double;
+    }
+    .C {
+    width: 13%;
+    margin-top: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+    }
+    .C:hover {
+    border: #eee;
+    border-style: double;
+    }
+    .D {
+        width: 200px;
+        margin-top: 150px;
+        margin-left: 80px;
+        }
+    .D:hover {
+    border: #eee;
+    border-style: double;
+    }
+    .back {
+    border: 1px solid Black;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Arial";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+    }
+    .back:hover{
+    color: White;
+    }
+    .back::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 0%;
+    background: Black;
+    z-index: -1;
+    
+    transition: 0.5s;
+    }
+    .back:hover::before{
+    height: 200%;
+    }

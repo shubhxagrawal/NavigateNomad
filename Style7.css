@@ -1,0 +1,123 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-repeat: repeat; background-size: auto; background-color: #eee; font-family: Arial;
+    }
+    .wrapper {
+    margin: 0 auto 0 60px; width: 1000px;
+    font-family: Arial; margin-left: -70px;
+    }
+    .back {
+     
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 15px;
+    font-family: "Arial"; cursor: pointer; margin: 10px; transition: 0.8s; position: relative; overflow: hidden; padding-top: 5px;
+    }
+    
+    .back:hover{ color: White;
+    }
+    .back::before{ content: ""; position: absolute; left: 0;
+    top: -10;
+    width: 100%;
+    height: 1%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .back:hover::before{ height: 200%;
+    }
+    nav {
+    width: 100%;
+     
+    height: 100px;
+    background-color: #080808;
+    }
+    ul{
+    }
+    ul li {
+    list-style: none; display: inline-block; float: left;
+    line-height: 100px;
+    }
+    ul li a { display: block;
+    text-decoration: none; font-size: 14px;
+    font-family: arial; color: #ffffff; padding: 0 10px; margin-left: 60px;
+    }
+    ul li a:hover { color: Blue;
+    }
+    .Khan {
+        height: 100px;
+margin-left: 170px;
+margin-right: 50px;
+scale: 2.5;
+z-index: -5;
+        }
+    body {
+     
+    background-color: #eee;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .main {
+    background-color: #FFFFFF; width: 400px;
+    height: 400px; margin: 7em auto; border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    
+    }
+    .sign {
+    padding-top: 40px; color: Black;
+    font-family: 'Ubuntu', sans-serif; font-weight: bold;
+    font-size: 23px;
+    
+    }
+    .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04); padding: 10px 20px;
+    border: none; border-radius: 20px; outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+     
+    margin-bottom: 50px; margin-left: 46px; text-align: center; margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    form.form1 {
+    padding-top: 40px;
+    
+    }
+    .pass {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04); padding: 10px 20px;
+    border: none; border-radius: 20px; outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02); margin-bottom: 50px;
+    margin-left: 46px; text-align: center; margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif; margin-bottom: 40px;
+    }
+    .un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+     
+    }
+    .submit {
+    cursor: pointer; border-radius: 5em; color: #fff; background: Black; border: 0;
+    padding-left: 40px; padding-right: 40px; padding-bottom: 10px; padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif; margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    
+    }
+    .forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12); color: Black;
+    padding-top: 15px; margin-top: 30px;
+    }
+    a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12); color: Black;
+    text-decoration: none
+    
+    }
+    @media (max-width: 600px) {
+    .main {
+    border-radius: 0px;
+    
+    }
+}  

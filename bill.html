@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bill.css">
+  <title>Bill</title>
+</head>
+<body>
+  <div class="bill-container">
+    <h1>Billing Information</h1>
+    <form id="billForm">
+      <div class="bill-row">
+        <div class="bill-col">
+          <label for="carId">Car ID:</label>
+          <span id="carIdDisplay">1</span>
+        </div>
+        <div class="bill-col">
+          <label for="dailyRate">Daily Rate:</label>
+          <span id="dailyRateDisplay">$700</span>
+        </div>
+      </div>
+      <div class="bill-row">
+        <div class="bill-col">
+          <label for="numberOfDays">Number of Days:</label>
+          <input type="number" id="numberOfDays" name="numberOfDays" min="1" value="1">
+        </div>
+      </div>
+      <div class="bill-row">
+        <div class="bill-col">
+          <label for="totalAmount">Total Amount:</label>
+          <span id="totalAmount">$700</span>
+        </div>
+      </div>
+      <div class="bill-row">
+        <div class="bill-col">
+          <label for="cgst">CGST (2.5%):</label>
+          <span id="cgstAmount">$17.50</span>
+        </div>
+        <div class="bill-col">
+          <label for="sgst">SGST (2.5%):</label>
+          <span id="sgstAmount">$17.50</span>
+        </div>
+      </div>
+      <div class="bill-row">
+        <div class="bill-col">
+          <label for="finalAmount">Final Amount:</label>
+          <span id="finalAmount">$735</span>
+        </div>
+      </div>
+      <div class="bill-row">
+        <div class="bill-col">
+          <button type="submit">Calculate Total Amount</button>
+          <button class="something" type="submit">Book Your Car!</button>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Get the query parameters from the URL
+    function getQueryParameters() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return {
+        id: urlParams.get('carId'),
+        rate: urlParams.get('rate')
+      };
+    }
+
+    // Set the billing details based on the query parameters
+    const queryParameters = getQueryParameters();
+    if (queryParameters.id && queryParameters.rate) {
+      const carId = queryParameters.id;
+      const dailyRate = queryParameters.rate;
+
+      // Set the car ID and daily rate
+      document.getElementById('carIdDisplay').innerText = carId;
+      document.getElementById('dailyRateDisplay').innerText = '$' + dailyRate;
+
+      // Calculate and set the initial total amount
+      updateTotalAmount();
+    }
+
+    // Calculate the total amount
+    function updateTotalAmount() {
+      const dailyRate = parseInt(document.getElementById('dailyRateDisplay').innerText.replace('$', ''));
+      const numberOfDays = parseInt(document.getElementById('numberOfDays').value);
+
+      const cgstAmount = (dailyRate * numberOfDays * 0.025).toFixed(2);
+      const sgstAmount = (dailyRate * numberOfDays * 0.025).toFixed(2);
+      const totalAmount = dailyRate * numberOfDays + parseFloat(cgstAmount) + parseFloat(sgstAmount);
+
+      document.getElementById('cgstAmount').innerText = '$' + cgstAmount;
+      document.getElementById('sgstAmount').innerText = '$' + sgstAmount;
+      document.getElementById('totalAmount').innerText = '$' + (totalAmount).toFixed(2);
+    }
+
+    // Calculate the total amount when the form is submitted
+    document.getElementById('billForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      updateTotalAmount();
+    });
+  </script>
+</body>
+</html>

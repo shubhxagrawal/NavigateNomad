@@ -1,0 +1,141 @@
+* { margin: 0;
+ 
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-repeat: repeat; background-size: auto; background-color: #eee; font-family: Arial;
+    }
+    .wrapper {
+    margin: 0 auto 0 60px; width: 1000px;
+    font-family: Arial; margin-left: -70px;
+    }
+    .back {
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 15px;
+    font-family: "Arial"; cursor: pointer; margin: 10px; transition: 0.8s; position: relative; overflow: hidden; padding-top: 5px; color: Black;
+    }
+    .back:hover{ color: White;
+     
+    }
+    .back::before{ content: ""; position: absolute; left: 0;
+    top: -10;
+    width: 100%;
+    height: 1%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .back:hover::before{ height: 200%;
+    }
+    nav {
+    width: 100%; height: 100px;
+    background-color: #080808;
+    }
+    ul{
+    }
+    ul li {
+    list-style: none; display: inline-block; 
+    float: left;
+    line-height: 100px;
+    }
+    ul li a { display: block;
+    text-decoration: none;
+     
+    font-size: 14px; font-family: arial; color: #ffffff; padding: 0 10px; margin-left: 60px;
+    }
+    ul li a:hover { color: Blue;
+    }
+    .Khan {
+        height: 100px;
+margin-left: 170px;
+margin-right: 50px;
+scale: 2.5;
+z-index: -5;
+        }
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    * {box-sizing: border-box; } 
+    input[type=text], select, textarea { width: 100%;
+    padding: 12px;
+    border: 1px solid White; border-radius: 0px;
+    box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical;
+    }
+    input[type=submit] { background-color: white; color: Black;
+     
+    padding: 12px 20px; border: none; border-radius: 0px; cursor: pointer;
+    }
+    
+    input[type=submit]:hover { background-color: Black; color: white;
+    border-color: white;
+    
+    }
+    .container {
+    border-radius: 5px; background-color: Non; padding: 50px;
+    
+    
+    margin-left: 100px; margin-right: 100px;
+    }
+    
+
+    .Heading1 {
+    margin-left: 150px;
+    margin-top: 30px;
+    z-index: 5;
+    text-transform: uppercase; font-size: 30px;
+    
+    position: relative; 
+    display: inline-block; cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+     
+    }
+    * The actual popup */
+    .popup .popuptext { visibility: hidden; width: 160px;
+    background-color: #555; color: #fff;
+    text-align: center; border-radius: 6px; padding: 8px 0; position: absolute; z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    
+    }
+    /* Popup arrow */
+    .popup .popuptext::after { content: "";
+    position: absolute; top: 100%;
+    left: 50%; margin-left: -5px;
+    border-width: 5px; border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    
+    }
+    /* Toggle this class - hide and show the popup */
+    .popup .show { visibility: visible;
+    -webkit-animation: fadeIn 1s;
+     
+    animation: fadeIn 1s;
+    }
+    
+    /* Add animation (fade in the popup) */ @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+    }
+    @keyframes fadeIn { from {opacity: 0;}
+    to {opacity:1 ;}
+    
+    }
+    .Bu {
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 15px;
+    font-family: "Arial"; cursor: pointer; margin: 10px; transition: 0.8s; position: relative; overflow: hidden; padding-top: 5px;
+    }
+    .Bu:hover{ color: white;
+    background-color: Black;
+    
+    }
+    .Bu::before{
+    content: ""; position: absolute;
+     
+    left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    
+    .Bu:hover::before{ height: 200%;
+    }
+    

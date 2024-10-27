@@ -1,0 +1,88 @@
+/* bill.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the bill container */
+  .bill-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center; /* Centering the contents */
+  }
+  
+  /* Styling the heading */
+  .bill-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling the form */
+  #billForm {
+    font-size: 16px;
+  }
+  
+  /* Styling the form rows */
+  .bill-row {
+    margin-bottom: 15px;
+
+  }
+  
+  /* Styling the form columns */
+  .bill-col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
+  }
+  
+  /* Styling the labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .something {
+    
+    margin-top: 5px;
+   
+  }
+  
+  /* Styling the spans */
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the input */
+  input[type="number"] {
+    width: calc(100% - 4px);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling the button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Styling the button on hover */
+  button[type="submit"]:hover {
+    background-color: green;
+  }

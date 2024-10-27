@@ -1,0 +1,193 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-repeat: repeat; background-size: auto; background-color: #eee; font-family: Arial;
+    }
+    .wrapper {
+    margin: 0 auto 0 60px; width: 1000px;
+     
+    font-family: Arial; margin-left: -70px;
+    }
+    .back {
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 15px;
+    font-family: "Arial"; cursor: pointer; margin: 10px; transition: 0.8s; position: relative; overflow: hidden; padding-top: 5px;
+    }
+    .back:hover{ color: White;
+    }
+    .back::before{ content: ""; position: absolute; left: 0;
+    top: -10;
+    width: 100%;
+    height: 1%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .back:hover::before{ height: 200%;
+    }
+    nav {
+    width: 100%; height: 100px;
+    background-color: #080808;
+     
+    }
+    ul{
+    }
+    ul li {
+    list-style: none; display: inline-block; float: left;
+    line-height: 100px;
+    }
+    ul li a { display: block;
+    text-decoration: none; font-size: 14px;
+    font-family: arial; color: #ffffff; padding: 0 10px; margin-left: 60px;
+    }
+    ul li a:hover { color: Blue;
+    }
+    .Khan {
+        height: 100px;
+margin-left: 170px;
+margin-right: 50px;
+scale: 2.5;
+z-index: -5;
+        }
+    .Heading1 {
+    text-transform: uppercase; 
+     text-align: center;
+    margin-top: 30px;
+    }
+    .column { float: left;
+    width: 33.33%;
+     
+    padding: 5px;
+    }
+    .row::after {
+    content: ""; clear: both; display: table;
+    }
+    .SC{
+    float: left; width: 33.33%; padding: 5px;
+    }
+    .A	{
+    margin-top: 40px;
+    }
+    .B	{
+    margin-top: 80px;
+    }
+    .CARP {
+    margin-top: 50px; margin-bottom: -50px;
+    }
+    .btn1 {
+    margin-top: 20px; margin-left: 200px;
+    }
+    .container{
+    text-align: Left;
+    }
+    .btn {
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 20px;
+    font-family: "Arial"; cursor: pointer; margin: 10px;
+     
+    transition: 0.8s; position: relative; overflow: hidden;
+    }
+    .btn1{
+    color: Black; margin-top: 10px; font-size: 20px; margin-left: 100px;
+    }
+    .btn1:hover{ color: White;
+    }
+    .btn1::before{ content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .btn1::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .btn1:hover::before{ height: 180%;
+    }
+    .btn2{
+    color: Black; margin-top: 10px; font-size: 20px; margin-left: 400px;
+    }
+    .btn2:hover{
+     
+    color: White;
+    }
+    .btn2::before{ content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .btn2::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .btn2:hover::before{ height: 180%;
+    }
+    .B3{
+    color: Black; font-size: 20px;
+    margin-left: 350px; margin-top: -100px;
+    }
+    .B3:hover{ color: White;
+    }
+    .B3::before{
+    content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+     
+    }
+    .B3::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .B3:hover::before{ height: 180%;
+    }
+    .GG {
+    margin-top: 80px;
+    }
+    .KL {
+    margin-top: 40px;
+    }
+    .container2{ text-align: Left;
+    }
+    .btn9 {
+    border: 1px solid Black; background: none; padding: 10px 20px; font-size: 20px;
+    font-family: "Arial"; cursor: pointer; margin: 10px; transition: 0.8s; position: relative; overflow: hidden;
+    }
+    .btn4 {
+    color: Black; margin-top: -100px; font-size: 20px; margin-left: 30%;
+    }
+    .btn4:hover{ color: White;
+     
+    }
+    .btn4::before{ content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+    }
+    .btn4::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .btn4:hover::before{ height: 180%;
+    }
+    .OB{
+    color: Black; margin-top: 100px; font-size: 20px;
+    margin-left: -1200px;
+    }
+    .OB:hover{ color: White;
+    }
+    .OB::before{
+    content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: Black; z-index: -1; transition: 0.5s;
+    }
+     
+    .OB::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .OB:hover::before{ height: 180%;
+    }
+    .btn6{
+    color: RED; font-size: 20px;
+    margin-left: 80%; margin-top:-10PX;
+    }
+    .btn6:hover{ color: White;
+    }
+    .btn6::before{ content: ""; position: absolute; left: 0;
+    width: 100%;
+    height: 0%; background: RED; z-index: -1; transition: 0.5s;
+    }
+    .btn6::before{ top: 0;
+    border-radius: 0 0 50% 50%;
+    }
+    .btn6:hover::before{ height: 180%;
+    }
+    

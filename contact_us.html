@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="microProjectApp">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style6.css">
+  <title>MicroProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include AngularJS Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="FormController">
+  <nav class="PK1">
+    <div class="wrapper">
+      <ul>
+        <li><img class="Khan" src="NavigateNomad.png" alt="myimage"></li>
+        <li><a href="homee.html">Home</a></li>
+        <li><a href="About_further.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="http://localhost:2000/login_2.html" id="loginLink">Log In</a></li>
+        <li><a href="http://localhost:2000/registration_2.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="about-section">
+    <div class="Heading1">
+      <h3>Contact Us</h3>
+    </div>
+
+    <div class="container">
+      <!-- AngularJS form -->
+      <form ng-submit="submitForm()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" ng-model="formData.firstname" placeholder="Your name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" ng-model="formData.lastname" placeholder="Your last name.." required>
+
+        <label for="country">Country</label>
+        <select id="country" ng-model="formData.country" required>
+          <option value="India">India</option>
+          <option value="United States">United States</option>
+          <option value="Spain">Spain</option>
+        </select>
+
+        <label for="subject">Address</label>
+        <textarea id="subject" ng-model="formData.address" placeholder="Write Your address.." style="height:200px" required></textarea>
+
+        <div class="popup">
+          <input class="Bu" type="submit" value="Submit">
+          <span class="popuptext" ng-class="{ 'show': isPopupVisible }" id="myPopup">Your Form has been submitted</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Define AngularJS application and controller
+    var app = angular.module('microProjectApp', []);
+    
+    app.controller('FormController', function($scope) {
+      // Initialize formData with default values
+      $scope.formData = {
+        firstname: "John",
+        lastname: "Doe",
+        country: "India",
+        address: "1234 Sobo, Mumbai, 401689"
+      };
+
+      $scope.isPopupVisible = false;
+
+      // Submit form function
+      $scope.submitForm = function() {
+        // Log the form data to the console
+        console.log("Form Submitted:", $scope.formData);
+
+        // Show the popup after form submission
+        $scope.isPopupVisible = true;
+
+        // Optional: Reset form (if desired)
+        // $scope.formData = {};
+      };
+    });
+  </script>
+</body>
+</html>

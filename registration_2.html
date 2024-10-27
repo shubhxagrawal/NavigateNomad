@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style8.css">
+<title>MicroProject</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="PK1">
+<div class="wrapper">
+<ul>
+<li><img class="Khan" src="NavigateNomad.png" alt="myimage"></li>
+<li><a href="homee.html">Home</a></li>
+<li><a href="About_further.html">About Us</a></li>
+<li><a href="contact_us.html">Contact Us</a></li>
+<li><a href="login_2.html">Log In</a></li>
+<li><a href="registration_2.html">Sign Up</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
+  <p class="sign" align="center">Sign Up</p>
+  <form  id="registration-form" class="form1" action="/register" method="POST">
+ <!-- <input class="un" type="text" id="firstname" align="center" placeholder="First Name">-->
+  <input class="un" type="text" id="username" name="username" align="center" placeholder="Username"> 
+  <input class="un" type="email" id="email" name="email" align="center" placeholder="Email">
+  <input class="pass" type="password" id="password" name="password" align="center" placeholder="Password">
+<!--  <input class="pass" type="password" id="confirmpassword" align="center" placeholder="Confirm Password">-->
+  <button class="passs" type="submit" >Sign Up</button>
+  <p>Already have an account? <a href="login_2.html">Login</a></p>
+
+  </form>
+  </div>
+  <script src="./login.js"></script>
+ 
+</body>
+<!--
+<script type="module">
+/*
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+ */
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyA6S4DDMkVkZEjvPvvCrYvguN_5WGN3DjQ",
+        authDomain: "navigatenomad-de2d2.firebaseapp.com",
+        projectId: "navigatenomad-de2d2",
+        storageBucket: "navigatenomad-de2d2.appspot.com",
+        messagingSenderId: "712855534419",
+        appId: "1:712855534419:web:ead0a759d50111fb30bfa6"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const database = firebase.database();
+
+      //setting up sign up function
+      function signup() {
+
+        
+            firstname = document.getElementById('firstname').value
+            lastname = sdocument.getElementById('lastname').value
+            email = document.getElementById('email').value
+            password = document.getElementById('password').value
+            confirmpassword = document.getElementById('confirmpassword').value
+        
+           
+        auth.createUserWithEmailAndPassword(email, password)
+            .then(function(){
+                // User created successfully
+                var user = auth.currentUser
+                
+                var database_ref = database.ref()
+
+                var user_data = {
+                    firstname  :  firstname,
+                    lastname:lastname,
+                    email:email,
+                    password:password,
+                    confirmpassword:confirmpassword
+                }
+                database_ref.child('users/' + user.uid).set(user_data)
+                alert('User created!')
+    
+                // Optionally, update user profile with additional information (e.g., name)
+                // user.updateProfile({ displayName: name });
+    
+                //window.location.href = "Login.html"; // Replace with your login page URL
+                // Handle successful signup (e.g., redirect to login page)
+            })
+            .catch(function(error){
+                // Handle signup errors
+                var errorCode = error.code
+                var errorMessage = error.message
+                alert(errorMessage)
+            })
+    }
+    
+
+  </script>
+-->
+<script>
+// Function to redirect to login page
+function redirectToLogin() {
+    // Here, you should add your logic to check if the form is properly filled
+    // For simplicity, let's assume the form is always properly filled
+    window.location.href = "Login.html";
+    return false; // Prevent form submission
+}
+</script>
+
+</html>
+
+
+
+
+    

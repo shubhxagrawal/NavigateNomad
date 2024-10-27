@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="microProjectApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style.css">
+    <title>MicroProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        // Define the AngularJS application
+        var app = angular.module('microProjectApp', []);
+
+        // Define a controller to handle the login functionality and navigation
+        app.controller('NavController', function($scope, $window) {
+            // Function to handle login
+            $scope.handleLogin = function() {
+                // Simulating a successful login, replace with actual logic
+                var isLoggedIn = true;
+                if (isLoggedIn) {
+                    // Redirect to home page once logged in
+                    $window.location.href = "homee.html";
+                }
+            };
+        });
+    </script>
+</head>
+<body ng-controller="NavController">
+    <nav class="PK1">
+        <div class="wrapper">
+            <ul>
+                <li><img class="Khan" src="NavigateNomad.png" alt="myimage"></li>
+                <li><a href="homee.html">Home</a></li>
+                <li><a href="About_further.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="http://localhost:2000/login_2.html" id="loginLink">Log In</a></li>
+                <li><a href="http://localhost:2000/registration_2.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Back1"></div>
+    <div class="Heading1">
+        <h4>Welcome To NavigateNomad.com </h4>
+    </div>
+    <div class="Heading2">
+        <h1>YOUR FAVOURITE RIDE IS HERE!</h1>
+    </div>
+    <div class="container">
+        <div class="CAR">
+            <img src="255570-car-Volvo-road-landscape-river-mountain-trees.jpg" alt="CARS" height="400">
+        </div>
+        <a href="further_home.html"><button class="btn btn1">EXPLORE YOUR OPTIONS</button></a>
+    </div>
+</body>
+</html>

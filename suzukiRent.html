@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Style4.css">
+<title>MicroProject</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="PK1">
+  <div class="wrapper">
+    <ul>
+      <li><img class="Khan" src="NavigateNomad.png" alt="myimage"></li>
+      <li><a href="homee.html">Home</a></li>
+      <li><a href="About_further.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="http://localhost:2000/login_2.html" id="loginLink">Log In</a></li>
+      <li><a href="http://localhost:2000/registration_2.html">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+
+  function redirectToBillPage(carId, dailyRate) {
+    window.location.href = "bill.html?carId=" + carId + "&rate=" + dailyRate;
+  }
+</script>
+<div class="Heading1">
+  <h1>MARUTI SUZUKI</h1>
+</div>
+<div class="row">
+  <div class="column">
+    <img class="orange" src="suzuki1.jpg" alt="" style="width:85%">
+  </div>
+  <div class="column">
+    <img class="KL" src="suzuki2.jpg" alt="" style="width:85%">
+  </div>
+  <div class="column">
+    <img class="GG" src="suzuki3.jpg" alt="" style="width:110%">
+  </div>
+</div>
+<div class="container">
+  <button class="btn btn1" onclick="redirectToBillPage(6, 250)">RENT NOW <br> <b> $250 / Day </b></button>
+  <button class="btn btn2" onclick="redirectToBillPage(7, 454)">RENT NOW <br> <b> $454 / Day </b></button>
+  <button class="btn B3" onclick="redirectToBillPage(8, 456)">RENT NOW <br> <b> $456 / Day </b></button>
+</div>
+<div class="row2">
+  <div class="SC">
+    <img class="A" src="suzuki4.jpg" alt="" style="width:85%">
+  </div>
+  <div class="SC">
+    <img class="B" src="suzuki5.jpg" alt="" style="width:85%">
+  </div>
+  <div class="SC">
+    <img class="CARP" src="suzuki6.jpg" alt="" style="width:85%">
+    <div class="container2">
+      <button class="btn9 btn4" onclick="redirectToBillPage(8, 769)">RENT NOW <br> <b> $769 / Day </b></button>
+      <button class="btn9 OB" onclick="redirectToBillPage(9, 546)">RENT NOW <br> <b> $546 / Day </b></button>
+      <button class="btn9 btn6"> PREMIUM </button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
